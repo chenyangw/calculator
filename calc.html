@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">   
+		<title>JavaScript Calculator</title>
+		<!-- CSS Stylesheet -->
+		<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+		<!-- Google Web Font for Calculator Display -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Orbitron">
+		<!-- JavaScript for Calculator Functions -->
+		<script src="javascript/calculator.js"></script>
+	</head>	  
+	<body>
+		<!-- Begin Calculator Layout -->
+		<table id="calc">
+			<!-- Calculator Dislay -->
+			<tr>
+				<td colspan="4">
+					<div class="display">
+						<!-- Input disabled to disallow invalid characters from keyboard -->
+						<input class="displayText" type="text" id="disp" disabled="disabled">
+					</div>
+				</td>
+			</tr>
+			<!-- Calculator Buttons -->
+			<tr>
+				<td><button id="button-mc" class="button-dark" onclick='memClear()'>MC</button></td>
+				<td><button id="button-mr" class="button-dark" onclick='memRecall()'>MR</button></td>
+				<td><button id="button-m-" class="button-dark" onclick='memMinus()'>M-</button></td>
+				<td><button id="button-m+" class="button-dark" onclick='memPlus()'>M+</button></td>
+			</tr>
+			<tr>
+				<td><button id="button-c" class="button" onclick='clearScreen()'>C</button></td>
+				<td><button id="button-(" class="button" onclick='addToScreen("(")'>(</button></td>
+				<td><button id="button-)" class="button" onclick='addToScreen(")")'>)</button></td>
+				<td><button id="button-/" class="button symbol" onclick='addToScreen("/")'>&divide;</button></td>
+			</tr>
+			<tr>
+				<td><button id="button-7" class="button" onclick='addToScreen("7")'>7</button></td>
+				<td><button id="button-8" class="button" onclick='addToScreen("8")'>8</button></td>
+				<td><button id="button-9" class="button" onclick='addToScreen("9")'>9</button></td>
+				<td><button id="button-*" class="button symbol" onclick='addToScreen("*")'>x</button></td>
+			</tr>
+			<tr>
+				<td><button id="button-4" class="button" onclick='addToScreen("4")'>4</button></td>
+				<td><button id="button-5" class="button" onclick='addToScreen("5")'>5</button></td>
+				<td><button id="button-6" class="button" onclick='addToScreen("6")'>6</button></td>
+				<td><button id="button--" class="button symbol" onclick='addToScreen("-")'>-</button></td>
+			</tr>
+			<tr>
+				<td><button id="button-1" class="button" onclick='addToScreen("1")'>1</button></td>
+				<td><button id="button-2" class="button" onclick='addToScreen("2")'>2</button></td>
+				<td><button id="button-3" class="button" onclick='addToScreen("3")'>3</button></td>
+				<td><button id="button-+" class="button symbol" onclick='addToScreen("+")'>+</button></td>
+			</tr>
+			<tr>
+				<td><button id="button-0" class="button" onclick='addToScreen("0")'>0</button></td>
+				<td><button id="button-." class="button" onclick='addToScreen(".")'>.</button></td>
+				<td colspan="2"><button id="button-=" class="button-equals symbol" onclick='evalu()'>=</button></td>
+			</tr>									
+		</table>
+		<!-- End Calculator Layout -->
+	</body>
+</html>

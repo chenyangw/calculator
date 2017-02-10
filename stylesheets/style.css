@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+body {
+	background: #efefef;
+	text-align: center;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+
+/* Calculator Body */
+#calc {
+	padding: 10px;
+	background: #999999;
+	position: absolute;
+	width: 250x;
+	height: 300px;
+	position: fixed;
+    margin-left: -125px; /* Half of width */
+    margin-top: -150px;  /* Half of height */
+    left: 50%; /* Centers calc on screen */
+    top: 50%; /* Centers calc on screen */
+    border: 1px solid #666666;
+    border-radius: 8px; /* Rounds corners */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Spacing between calculator elements */
+#calc td{
+	padding: 3px;
+}
+
+/* Calculator Buttons */
+.button, .button-equals, .button-dark{
+	box-shadow: 2px 3px 0px 0px #047291; /* Button effect */
+	background-color: #06b1e5;
+	border-radius: 5px; /* Rounds corners */
+	border: 1px solid #337bc4;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: arial;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #528ecc;
+	width: 50px;
+	height: 30px;
+}
+
+/* Font for symbols to make them more readable */
+.symbol{
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+/* Calculator Button Hover Effect */
+.button:hover, .button-equals:hover {
+	background-color:#07bffc;
+}
+
+.button:active, .button-equals:active, .button-dark:active {
+	position:relative;
+	top: 1px;
+}
+
+/* Equals Button */
+.button-equals{
+	width: 108px;
+	background: #44d1fc;
+	box-shadow: 2px 3px 0px 0px #0583a7;
+}
+
+/* Dark Blue Buttons */
+.button-dark{
+	background: #047da2;
+	box-shadow: 2px 3px 0px 0px #044e65;
+}
+
+.button-dark:hover {
+	background: #0594c0;
+}
+
+/* Calculator Display */
+.display{
+	background-color: #4f4e4e;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 5px; /* Rounds corners */
+	width: 225px;
+	left: 15px;
+	top: 20px;
+	height: 40px;
+}
+
+.displayText{
+	font-family: 'Orbitron', serif;
+	font-size: 18px;
+	letter-spacing: 2px;
+	background-color: #4f4e4e;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2); /* Inner shadow */
+	border-radius: 5px; /* Rounds corners */
+	color: #ffffff;
+    font-weight: bold;
+	padding: 5px 10px 0px 10px;
+	top: 20px;
+	height: 38px;
+	width: 205px;
+	border: 0px;
+}
